@@ -1,7 +1,7 @@
 # .coveragerc to control coverage.py
 [run]
 branch = True
-source = concurrency_toolkit
+source = siegesailor.concurrency_toolkit
 # omit = bad_file.py
 
 [paths]

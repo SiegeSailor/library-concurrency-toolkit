@@ -8,8 +8,8 @@
 # serve to show the default.
 
 import os
-import sys
 import shutil
+import sys
 
 # -- Path setup --------------------------------------------------------------
 
@@ -34,7 +34,7 @@ except ImportError:
     from sphinx import apidoc
 
 output_dir = os.path.join(__location__, "api")
-module_dir = os.path.join(__location__, "../src/concurrency_toolkit")
+module_dir = os.path.join(__location__, "../src/siegesailor")
 try:
     shutil.rmtree(output_dir)
 except FileNotFoundError:
@@ -87,8 +87,8 @@ source_suffix = ".rst"
 master_doc = "index"
 
 # General information about the project.
-project = "Concurrency-Toolkit"
-copyright = "2025, JinYu.Zhang"
+project = "concurrency-toolkit"
+copyright = "2025, Jin Yu Zhang"
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -99,7 +99,7 @@ copyright = "2025, JinYu.Zhang"
 # If you don’t need the separation provided between version and release,
 # just set them both to the same value.
 try:
-    from concurrency_toolkit import __version__ as version
+    from siegesailor.concurrency_toolkit import __version__ as version
 except ImportError:
     version = ""
 
@@ -158,10 +158,7 @@ html_theme = "alabaster"
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-html_theme_options = {
-    "sidebar_width": "300px",
-    "page_width": "1200px"
-}
+html_theme_options = {"sidebar_width": "300px", "page_width": "1200px"}
 
 # Add any paths that contain custom themes here, relative to this directory.
 # html_theme_path = []
@@ -229,7 +226,7 @@ html_static_path = ["_static"]
 # html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = "Concurrency-Toolkit-doc"
+htmlhelp_basename = "concurrency-toolkit-doc"
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -246,7 +243,13 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-    ("index", "user_guide.tex", "Concurrency-Toolkit Documentation", "JinYu.Zhang", "manual")
+    (
+        "index",
+        "user_guide.tex",
+        "concurrency-toolkit Documentation",
+        "Jin Yu Zhang",
+        "manual",
+    )
 ]
 
 # The name of an image file (relative to this directory) to place at the top of

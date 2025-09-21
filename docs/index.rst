@@ -1,8 +1,8 @@
 ===================
-Concurrency-Toolkit
+concurrency-toolkit
 ===================
 
-This is the documentation of **Concurrency-Toolkit**.
+This is the documentation of **concurrency-toolkit**.
 
 .. note::
 

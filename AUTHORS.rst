@@ -2,4 +2,4 @@
 Contributors
 ============
 
-* JinYu.Zhang <JinYu.Zhang@coopersurgical.com>
+* Jin Yu Zhang <siegesailor@gmail.com>

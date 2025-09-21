@@ -1,9 +1,9 @@
 import pytest
 
-from concurrency_toolkit.skeleton import fib, main
+from siegesailor.concurrency_toolkit.skeleton import fib, main
 
-__author__ = "JinYu.Zhang"
-__copyright__ = "JinYu.Zhang"
+__author__ = "Jin Yu Zhang"
+__copyright__ = "Jin Yu Zhang"
 __license__ = "MIT"
 
 

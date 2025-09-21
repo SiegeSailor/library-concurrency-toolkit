@@ -24,10 +24,10 @@ import argparse
 import logging
 import sys
 
-from concurrency_toolkit import __version__
+from siegesailor.concurrency_toolkit import __version__
 
-__author__ = "JinYu.Zhang"
-__copyright__ = "JinYu.Zhang"
+__author__ = "Jin Yu Zhang"
+__copyright__ = "Jin Yu Zhang"
 __license__ = "MIT"
 
 _logger = logging.getLogger(__name__)
@@ -36,7 +36,7 @@ _logger = logging.getLogger(__name__)
 # ---- Python API ----
 # The functions defined in this section can be imported by users in their
 # Python scripts/interactive interpreter, e.g. via
-# `from concurrency_toolkit.skeleton import fib`,
+# `from siegesailor.concurrency_toolkit.skeleton import fib`,
 # when using this Python module as a library.
 
 
@@ -76,7 +76,7 @@ def parse_args(args):
     parser.add_argument(
         "--version",
         action="version",
-        version=f"Concurrency-Toolkit {__version__}",
+        version=f"concurrency-toolkit {__version__}",
     )
     parser.add_argument(dest="n", help="n-th Fibonacci number", type=int, metavar="INT")
     parser.add_argument(
@@ -144,6 +144,6 @@ if __name__ == "__main__":
     # After installing your project with pip, users can also run your Python
     # modules as scripts via the ``-m`` flag, as defined in PEP 338::
     #
-    #     python -m concurrency_toolkit.skeleton 42
+    #     python -m siegesailor.concurrency_toolkit.skeleton 42
     #
     run()
