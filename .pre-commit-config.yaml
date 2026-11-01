@@ -22,7 +22,7 @@ repos:
 #   rev: v3.17.0
 #   hooks:
 #   - id: pyupgrade
-#     args: ['--py38-plus']
+#     args: ['--py310-plus']
 
 ## If you want to avoid flake8 errors due to unused vars or imports:
 # - repo: https://github.com/PyCQA/autoflake
